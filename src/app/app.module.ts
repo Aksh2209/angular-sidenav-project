@@ -13,7 +13,8 @@ import { TicketComponent } from './ticket/ticket.component';
 
 @NgModule({
   imports: [ 
-    BrowserModule, FormsModule, ReactiveFormsModule, BrowserAnimationsModule, AngularMaterial
+    BrowserModule, FormsModule, ReactiveFormsModule, BrowserAnimationsModule, AngularMaterial,
+    RouterModule.forRoot (appRoutes)
   ],
   declarations: [ 
     AppComponent, FooterComponent, HeaderComponent, TicketComponent
