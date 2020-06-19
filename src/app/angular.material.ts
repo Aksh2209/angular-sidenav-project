@@ -4,7 +4,6 @@ import { NgModule } from '@angular/core';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatCheckboxModule } from '@angular/material/checkbox';
-import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 // Layout
@@ -25,20 +24,16 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatGridListModule} from '@angular/material/grid-list';
 
-import { MatTableModule } from '@angular/material/table';
-
 @NgModule ({
     imports: [
-        MatInputModule, MatFormFieldModule, MatCardModule, MatDatepickerModule, MatSlideToggleModule,
-        MatCheckboxModule, MatExpansionModule, MatSidenavModule,
+        MatInputModule, MatFormFieldModule, MatCardModule,MatSlideToggleModule, MatCheckboxModule, MatExpansionModule, MatSidenavModule,
         MatButtonModule, MatIconModule, MatProgressSpinnerModule, MatChipsModule, MatRippleModule,
-        MatDialogModule, MatTooltipModule, MatTabsModule, MatGridListModule, MatTableModule
+        MatDialogModule, MatTooltipModule, MatTabsModule, MatGridListModule
     ],
     exports: [
-        MatInputModule, MatFormFieldModule, MatCardModule, MatDatepickerModule, MatSlideToggleModule,
-        MatCheckboxModule, MatExpansionModule, MatSidenavModule,
+        MatInputModule, MatFormFieldModule, MatCardModule, MatSlideToggleModule, MatCheckboxModule, MatExpansionModule, MatSidenavModule,
         MatButtonModule, MatIconModule, MatProgressSpinnerModule, MatChipsModule, MatRippleModule,
-        MatDialogModule, MatTooltipModule, MatTabsModule, MatGridListModule,MatTableModule
+        MatDialogModule, MatTooltipModule, MatTabsModule, MatGridListModule
     ]
 })
 export class AngularMaterial { }
