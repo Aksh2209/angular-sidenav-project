@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MdbNavBar} from './mdb-nav-bar.component';
 
 import { AngularMaterial } from './angular.material';
 import { appRoutes } from './app.route';
@@ -14,7 +15,7 @@ import { TicketComponent } from './ticket/ticket.component';
 
 @NgModule({
   imports: [ 
-    BrowserModule, FormsModule, ReactiveFormsModule, BrowserAnimationsModule, AngularMaterial,
+    BrowserModule, FormsModule, ReactiveFormsModule, BrowserAnimationsModule, AngularMaterial, MdbNavBar,
     RouterModule.forRoot ( appRoutes )
   ],
   declarations: [ 
