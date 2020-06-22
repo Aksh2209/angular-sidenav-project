@@ -10,7 +10,7 @@ import { appRoutes } from './app.route';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './global/footer/footer.component';
 import { HeaderComponent } from './global/header/header.component';
-import { TicketComponent } from './ticket/ticket.component';
+import { SidenavComponent } from './sidenav/sidenav.component';
 
 @NgModule({
   imports: [ 
@@ -18,7 +18,7 @@ import { TicketComponent } from './ticket/ticket.component';
     RouterModule.forRoot ( appRoutes )
   ],
   declarations: [ 
-    AppComponent, FooterComponent, HeaderComponent, TicketComponent
+    AppComponent, FooterComponent, HeaderComponent, SidenavComponent
   ],
   bootstrap:    [ AppComponent ]
 })
