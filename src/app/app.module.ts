@@ -10,11 +10,11 @@ import { appRoutes } from './app.route';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './global/footer/footer.component';
 import { HeaderComponent } from './global/header/header.component';
-import { SidenavComponent } from './sidenav/sidenav.component';
+import { SidenavComponent } from './sidenav/sidenav.component';import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   imports: [ 
-    BrowserModule, FormsModule, ReactiveFormsModule, BrowserAnimationsModule, AngularMaterial,
+    BrowserModule, FormsModule, ReactiveFormsModule, BrowserAnimationsModule, AngularMaterial, MatIconModule,
     RouterModule.forRoot ( appRoutes )
   ],
   declarations: [ 

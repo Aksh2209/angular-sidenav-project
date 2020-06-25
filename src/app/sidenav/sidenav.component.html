@@ -1,13 +1,74 @@
-<header-section></header-section>
 <mat-sidenav-container class="example-container" *ngIf="shouldRun">
-  <mat-sidenav #sidenav mode="side" [(opened)]="opened" class="example-sidenav">
-    <a href="#Home">Home</a><br><br>
-    <a href="#Tickets">Tickets</a><br><br>
-    <a href="#Environment">Environment</a>
+  <mat-sidenav #sidenav mode="side" [(opened)]="opened">
+    <nav class="main-menu">
+    <ul>
+    <li>
+      <a href="dashboard">
+        <mat-icon  class ="icon">dashboard</mat-icon>
+        <span class="nav-text">Dashboard</span>
+      </a>            
+    </li>
+    <li class="has-subnav">
+      <a href="#">
+        <mat-icon class=" icon">library_books</mat-icon>
+        <span class="nav-text">DEP board</span>
+      </a>
+    </li>
+    <li class="has-subnav">
+      <a href="#">
+        <mat-icon class=" icon">grading</mat-icon>
+        <span class="nav-text">Backlog</span>
+      </a>
+    </li>
+    <li class="has-subnav">
+      <a href="#">
+        <mat-icon  class ="icon">view_week</mat-icon>
+        <span class="nav-text">Active sprints</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <mat-icon  class ="icon">show_chart</mat-icon>
+        <span class="nav-text">Reports</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <mat-icon  class ="icon">style</mat-icon>
+        <span class="nav-text">Releases</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <mat-icon  class ="icon">bug_report</mat-icon>
+        <span class="nav-text">Issues and filter</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <mat-icon  class ="icon">article</mat-icon>
+        <span class="nav-text">Pages</span>
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <mat-icon  class ="icon">source</mat-icon>
+        <span class="nav-text">Components</span>
+      </a>
+    </li>
+  </ul>
+  <ul class="logout">
+    <li>
+      <a href="#">
+        <mat-icon  class ="icon">logout</mat-icon>
+        <span class="nav-text">Logout</span>
+      </a>
+    </li>  
+  </ul>
+    </nav>
   </mat-sidenav>
 
   <mat-sidenav-content>
-    <mat-checkbox [(ngModel)]="opened"></mat-checkbox>
+    <p><mat-checkbox [(ngModel)]="opened"></mat-checkbox></p>
   </mat-sidenav-content>
 </mat-sidenav-container>
-<footer-section></footer-section>

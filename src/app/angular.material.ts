@@ -13,7 +13,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 
 // Buttons
 import { MatButtonModule } from '@angular/material/button';
-import { MatIconModule } from '@angular/material/icon';
+
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatRippleModule } from '@angular/material/core';
@@ -27,12 +27,12 @@ import {MatGridListModule} from '@angular/material/grid-list';
 @NgModule ({
     imports: [
         MatInputModule, MatFormFieldModule, MatCardModule,MatSlideToggleModule, MatCheckboxModule, MatExpansionModule, MatSidenavModule,
-        MatButtonModule, MatIconModule, MatProgressSpinnerModule, MatChipsModule, MatRippleModule,
+        MatButtonModule, MatProgressSpinnerModule, MatChipsModule, MatRippleModule,
         MatDialogModule, MatTooltipModule, MatTabsModule, MatGridListModule
     ],
     exports: [
         MatInputModule, MatFormFieldModule, MatCardModule, MatSlideToggleModule, MatCheckboxModule, MatExpansionModule, MatSidenavModule,
-        MatButtonModule, MatIconModule, MatProgressSpinnerModule, MatChipsModule, MatRippleModule,
+        MatButtonModule, MatProgressSpinnerModule, MatChipsModule, MatRippleModule,
         MatDialogModule, MatTooltipModule, MatTabsModule, MatGridListModule
     ]
 })
